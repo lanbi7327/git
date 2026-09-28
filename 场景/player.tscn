@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://3l286kf6515s"]
+
+[ext_resource type="Texture2D" uid="uid://b7uakywi3exq2" path="res://资源/牛头人正.png" id="1_s6iox"]
+[ext_resource type="Script" uid="uid://njodqgvg7ix2" path="res://脚本/player.gd" id="2_slsej"]
+
+[node name="player" type="Node2D" unique_id=1486563110]
+
+[node name="牛头人正" type="Sprite2D" parent="." unique_id=425543717]
+position = Vector2(119.99999, 130)
+scale = Vector2(7.854839, 7.854839)
+texture = ExtResource("1_s6iox")
+script = ExtResource("2_slsej")
+
+[node name="Camera2D" type="Camera2D" parent="牛头人正" unique_id=1842595761]

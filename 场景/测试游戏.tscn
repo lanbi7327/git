@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://dvwnkw0iprhaa"]
+
+[ext_resource type="Texture2D" uid="uid://7o1mvk0i21de" path="res://资源/草地整.png" id="1_fi3sp"]
+[ext_resource type="Texture2D" uid="uid://b7uakywi3exq2" path="res://资源/牛头人正.png" id="2_ikvpo"]
+[ext_resource type="Script" uid="uid://njodqgvg7ix2" path="res://脚本/player.gd" id="3_ikvpo"]
+
+[sub_resource type="Gradient" id="Gradient_ikvpo"]
+colors = PackedColorArray(0, 0, 0, 0.27450982, 1, 1, 1, 0.043137256)
+
+[node name="Node2D" type="Node2D" unique_id=1212781821]
+
+[node name="640" type="Sprite2D" parent="." unique_id=1811344343]
+position = Vector2(612, 337.00003)
+scale = Vector2(2.6074073, 2.6074073)
+texture = ExtResource("1_fi3sp")
+
+[node name="niutouren" type="Sprite2D" parent="." unique_id=2127053166]
+position = Vector2(308, 244.00002)
+scale = Vector2(4.237903, 4.237903)
+texture = ExtResource("2_ikvpo")
+script = ExtResource("3_ikvpo")
+
+[node name="Camera2D" type="Camera2D" parent="niutouren" unique_id=524338886]
+position = Vector2(0.52210236, -1.3052597)
+scale = Vector2(0.99999994, 0.99999994)
+zoom = Vector2(2, 2)
+limit_left = 0
+limit_top = 0
+limit_right = 1150
+limit_bottom = 650
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="niutouren" unique_id=1958038582]
+show_behind_parent = true
+position = Vector2(0.23595428, -0.23596954)
+rotation = -1.0576695
+scale = Vector2(0.9999999, 0.9999999)
+amount = 5
+texture = ExtResource("2_ikvpo")
+lifetime = 0.67
+spread = 0.0
+gravity = Vector2(0, 0)
+scale_amount_min = 4.5
+scale_amount_max = 4.5
+color_ramp = SubResource("Gradient_ikvpo")
